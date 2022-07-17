@@ -31,7 +31,9 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>01</span>About Natour</a>
+            <a href="#section-about" class="navigation__link"
+              ><span>01</span>About Natour</a
+            >
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link"
@@ -39,13 +41,19 @@
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>03</span>Popular tour</a>
+            <a href="#section-tours" class="navigation__link"
+              ><span>03</span>Popular tour</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+            <a href="#section-stories" class="navigation__link"
+              ><span>04</span>Stories</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>05</span>Book now</a>
+            <a href="#section-book" class="navigation__link"
+              ><span>05</span>Book now</a
+            >
           </li>
         </ul>
       </nav>
@@ -70,7 +78,7 @@
       <!-- ######################### -->
       <!-- ABOUT SECTION -->
       <!-- ######################### -->
-      <section class="section-about">
+      <section class="section-about" id="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Exciting tours for adventurous people
@@ -125,7 +133,7 @@
       <!-- ######################### -->
       <!-- FEATURES SECTION -->
       <!-- ######################### -->
-      <section class="section-features">
+      <section class="section-features" id="section-features">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -184,7 +192,7 @@
       <!-- ######################### -->
       <!-- TOURS SECTION -->
       <!-- ######################### -->
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -215,7 +223,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -246,7 +254,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -277,7 +285,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -292,7 +300,7 @@
       <!-- ######################### -->
       <!-- STORIES SECTION -->
       <!-- ######################### -->
-      <section class="section-stories">
+      <section class="section-stories" id="section-stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="img/video.mp4" type="video/mp4" />
@@ -363,7 +371,7 @@
       <!-- ######################### -->
       <!-- BOOKING SECTION -->
       <!-- ######################### -->
-      <section class="section-book">
+      <section class="section-book" id="section-book">
         <div class="row">
           <div class="book">
             <div class="book__form">
@@ -467,13 +475,43 @@
           <p class="footer__copyright">
             Built by <a href="#" class="footer__link">Elijah Mwambazi</a> from
             Jonas Schmendtman's online course
-            <a href="#" class="footer__link">Advanced CSS and Sass &copy;</a>.
-            Copyright &copy; by Jonas Schmedtman
+            <a href="#" class="footer__link">Advanced CSS and Sass </a>.
+            Copyright &copy; design by Jonas Schmedtman
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- ######################### -->
+    <!-- BOOKING POPUP -->
+    <!-- ######################### -->
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read the terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Dignissim sodales ut eu sem integer. Pulvinar elementum integer enim
+            neque volutpat ac tincidunt vitae semper. Elementum nisi quis
+            eleifend quam adipiscing vitae proin sagittis. Sed faucibus turpis
+            in eu. Egestas diam in arcu cursus. Diam vel quam elementum pulvinar
+            etiam non quam lacus.
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
     <!-- <section class="grid-test">
       <div class="row">
         <div class="col-1-of-2">Col 1 of 2</div>
